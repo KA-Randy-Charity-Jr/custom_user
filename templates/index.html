@@ -1,0 +1,11 @@
+
+
+<h2> am i authenticated? {{request.user.is_authenticated}}
+{% if request.user.is_authenticated %}
+    <h3>Welcome, {{request.user.username}}
+
+{% endif %}
+
+<a href="/login">login?</a>
+<a href="/signup">signup?</a>
+<a href="/logout">logout?</a>
